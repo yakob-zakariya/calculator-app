@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme{
+ 
+
+/* ### Theme 1 */
+
+/* #### Backgrounds */
+
+/* (main background) */
+--color-navy-850: hsl(222, 26%, 31%);
+/* (toggle background, keypad background) */
+--color-navy-900 : hsl(223, 31%, 20%);
+/* (screen background) */
+--color-navy-950 : hsl(224, 36%, 15%);
+
+/* #### Keys */
+
+/* (key background) */
+--color-navy-700 : hsl(225, 21%, 49%);
+/* (key shadow): */
+--color-navy-800: hsl(224, 28%, 35%);
+
+/* (key background, toggle) */
+--color-red-600: hsl(6, 63%, 50%);
+/* (key shadow) */
+--color-red-800 : hsl(6, 70%, 34%);
+/* (key background) */
+--color-gray-200 : hsl(0, 0%, 90%);
+/* (key shadow) */
+--color-gray orange 400 : hsl(28, 16%, 65%);
+
+/* #### Text */
+
+--color-navy-750: hsl(221, 14%, 31%);
+--color-white: hsl(0, 100%, 100%);
+
+/* ### Theme 1 */
+
+
+
+
+/* ### Theme 2
+
+#### Backgrounds
+
+- Gray 200 (main background): hsl(0, 0%, 90%)
+- Gray 300 (toggle background, keypad background): hsl(0, 5%, 81%)
+- Gray 100 (screen background): hsl(0, 0%, 93%)
+
+#### Keys
+
+- Bue 500 (key background): hsl(185, 42%, 37%)
+- Blue 600 (key shadow): hsl(185, 58%, 25%)
+
+- Orange 700 (key background, toggle): hsl(25, 98%, 40%)
+- Orange 800 (key shadow): hsl(25, 99%, 27%)
+
+- Grey 200 (key background): hsl(0, 0%, 90%)
+- Grey orange 450 (key shadow): hsl(35, 11%, 61%)
+
+#### Text
+
+- Gray 900: hsl(60, 10%, 19%)
+- White (text): hsl(0, 100%, 100%)
+
+### Theme 3
+
+#### Backgrounds
+
+- Purple 950 (main background): hsl(268, 75%, 9%)
+- Purple 900 (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
+
+#### Keys
+
+- Purple 800 (key background): hsl(281, 89%, 26%)
+- Purple 400 (key shadow): hsl(285, 91%, 52%)
+
+- Cyan 500 (key background, toggle): hsl(176, 100%, 44%)
+- Cyan 400 (key shadow): hsl(177, 92%, 70%)
+
+- Purple 850 (key background): hsl(268, 47%, 21%)
+- Purple 750 (key shadow): hsl(290, 70%, 36%)
+
+#### Text
+
+- Yellow 300: hsl(52, 100%, 62%)
+- Blue 950: hsl(198, 20%, 13%)
+- White (text): hsl(0, 100%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (numbers): 32px
+
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 700 */
+}
+
+body{
+  @apply bg-navy-850;
+@appy text-white;
+font-size: 32px;
+
+
+  
+  font-family: 'League Spartan', sans-serif;
+}
