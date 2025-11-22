@@ -1,112 +1,93 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 @import "tailwindcss";
 
-@theme{
- 
+@theme {
+  /* Semantic color tokens - values change based on theme */
+  --color-bg-main: hsl(222, 26%, 31%);
+  --color-bg-toggle: hsl(223, 31%, 20%);
+  --color-bg-keypad: hsl(223, 31%, 20%);
+  --color-bg-screen: hsl(224, 36%, 15%);
 
-/* ### Theme 1 */
+  --color-key-primary-bg: hsl(225, 21%, 49%);
+  --color-key-primary-shadow: hsl(224, 28%, 35%);
 
-/* #### Backgrounds */
+  --color-key-secondary-bg: hsl(6, 63%, 50%);
+  --color-key-secondary-shadow: hsl(6, 70%, 34%);
 
-/* (main background) */
---color-navy-850: hsl(222, 26%, 31%);
-/* (toggle background, keypad background) */
---color-navy-900 : hsl(223, 31%, 20%);
-/* (screen background) */
---color-navy-950 : hsl(224, 36%, 15%);
+  --color-key-default-bg: hsl(30, 25%, 89%);
+  --color-key-default-shadow: hsl(28, 16%, 65%);
 
-/* #### Keys */
-
-/* (key background) */
---color-navy-700 : hsl(225, 21%, 49%);
-/* (key shadow): */
---color-navy-800: hsl(224, 28%, 35%);
-
-/* (key background, toggle) */
---color-red-600: hsl(6, 63%, 50%);
-/* (key shadow) */
---color-red-800 : hsl(6, 70%, 34%);
-/* (key background) */
---color-gray-200 : hsl(0, 0%, 90%);
-/* (key shadow) */
---color-gray orange 400 : hsl(28, 16%, 65%);
-
-/* #### Text */
-
---color-navy-750: hsl(221, 14%, 31%);
---color-white: hsl(0, 100%, 100%);
-
-/* ### Theme 1 */
-
-
-
-
-/* ### Theme 2
-
-#### Backgrounds
-
-- Gray 200 (main background): hsl(0, 0%, 90%)
-- Gray 300 (toggle background, keypad background): hsl(0, 5%, 81%)
-- Gray 100 (screen background): hsl(0, 0%, 93%)
-
-#### Keys
-
-- Bue 500 (key background): hsl(185, 42%, 37%)
-- Blue 600 (key shadow): hsl(185, 58%, 25%)
-
-- Orange 700 (key background, toggle): hsl(25, 98%, 40%)
-- Orange 800 (key shadow): hsl(25, 99%, 27%)
-
-- Grey 200 (key background): hsl(0, 0%, 90%)
-- Grey orange 450 (key shadow): hsl(35, 11%, 61%)
-
-#### Text
-
-- Gray 900: hsl(60, 10%, 19%)
-- White (text): hsl(0, 100%, 100%)
-
-### Theme 3
-
-#### Backgrounds
-
-- Purple 950 (main background): hsl(268, 75%, 9%)
-- Purple 900 (toggle background, keypad background, screen background): hsl(268, 71%, 12%)
-
-#### Keys
-
-- Purple 800 (key background): hsl(281, 89%, 26%)
-- Purple 400 (key shadow): hsl(285, 91%, 52%)
-
-- Cyan 500 (key background, toggle): hsl(176, 100%, 44%)
-- Cyan 400 (key shadow): hsl(177, 92%, 70%)
-
-- Purple 850 (key background): hsl(268, 47%, 21%)
-- Purple 750 (key shadow): hsl(290, 70%, 36%)
-
-#### Text
-
-- Yellow 300: hsl(52, 100%, 62%)
-- Blue 950: hsl(198, 20%, 13%)
-- White (text): hsl(0, 100%, 100%)
-
-## Typography
-
-### Body Copy
-
-- Font size (numbers): 32px
-
-### Font
-
-- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
-- Weights: 700 */
+  --color-text-primary: hsl(221, 14%, 31%);
+  --color-text-secondary: hsl(0, 0%, 100%);
 }
 
-body{
-  @apply bg-navy-850;
-@appy text-white;
-font-size: 32px;
+/* Theme 1 - Default (Navy) */
+.theme-1 {
+  --color-bg-main: hsl(222, 26%, 31%);
+  --color-bg-toggle: hsl(223, 31%, 20%);
+  --color-bg-keypad: hsl(223, 31%, 20%);
+  --color-bg-screen: hsl(224, 36%, 15%);
 
+  --color-key-primary-bg: hsl(225, 21%, 49%);
+  --color-key-primary-shadow: hsl(224, 28%, 35%);
 
-  
-  font-family: 'League Spartan', sans-serif;
+  --color-key-secondary-bg: hsl(6, 63%, 50%);
+  --color-key-secondary-shadow: hsl(6, 70%, 34%);
+
+  --color-key-default-bg: hsl(30, 25%, 89%);
+  --color-key-default-shadow: hsl(28, 16%, 65%);
+
+  --color-text-primary: hsl(221, 14%, 31%);
+  --color-text-secondary: hsl(0, 0%, 100%);
+}
+
+/* Theme 2 - Light */
+.theme-2 {
+  --color-bg-main: hsl(0, 0%, 90%);
+  --color-bg-toggle: hsl(0, 5%, 81%);
+  --color-bg-keypad: hsl(0, 5%, 81%);
+  --color-bg-screen: hsl(0, 0%, 93%);
+
+  --color-key-primary-bg: hsl(185, 42%, 37%);
+  --color-key-primary-shadow: hsl(185, 58%, 25%);
+
+  --color-key-secondary-bg: hsl(25, 98%, 40%);
+  --color-key-secondary-shadow: hsl(25, 99%, 27%);
+
+  --color-key-default-bg: hsl(45, 7%, 89%);
+  --color-key-default-shadow: hsl(35, 11%, 61%);
+
+  --color-text-primary: hsl(60, 10%, 19%);
+  --color-text-secondary: hsl(0, 0%, 100%);
+}
+
+/* Theme 3 - Purple */
+.theme-3 {
+  --color-bg-main: hsl(268, 75%, 9%);
+  --color-bg-toggle: hsl(268, 71%, 12%);
+  --color-bg-keypad: hsl(268, 71%, 12%);
+  --color-bg-screen: hsl(268, 71%, 12%);
+
+  --color-key-primary-bg: hsl(281, 89%, 26%);
+  --color-key-primary-shadow: hsl(285, 91%, 52%);
+
+  --color-key-secondary-bg: hsl(176, 100%, 44%);
+  --color-key-secondary-shadow: hsl(
+    177,
+    92%,
+    70%
+  );
+
+  --color-key-default-bg: hsl(268, 47%, 21%);
+  --color-key-default-shadow: hsl(290, 70%, 36%);
+
+  --color-text-primary: hsl(52, 100%, 62%);
+  --color-text-secondary: hsl(0, 0%, 100%);
+  --color-text-tertiary: hsl(198, 20%, 13%);
+}
+
+body {
+  @apply bg-bg-main text-text-secondary;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
 }
